@@ -25,7 +25,9 @@ export default function ViewFormPage() {
       console.log(error);
     }
   };
-
+  const submitForm = () => {
+    alert("Form Submitted successfully");
+  };
   return (
     <div className="home-page">
       <div className="jumbotron">
@@ -44,12 +46,20 @@ export default function ViewFormPage() {
                 </label>
                 <input
                   className="input-class"
-                  disabled="true"
                   placeholder={item.input_paceholder}
                   type={item.input_type}
                 />
               </div>
             ))}
+          </div>
+          <div className="just-center">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              onClick={() => submitForm()}
+            >
+              Submit Form
+            </button>
           </div>
         </div>
       </div>
