@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+}
+.home-page {
+  background-color: rgb(237, 237, 237);
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+.border {
+  border: 2px solid;
+}
+.dark-back {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.185);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.edit-input-form {
+  background-color: #fff;
+  padding: 30px;
+}
+.pointer {
+  cursor: pointer;
+}
+.just-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.just-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.just-align {
+  display: flex;
+  align-items: center;
+}
+
+.add-form-page {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: flex;
+}
+.form-section {
+  background-color: #fff;
+  width: 75%;
+  height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 10px 15px rgba(18, 18, 18, 0.1);
+}
+.form-utility {
+  box-shadow: 0px 10px 15px rgba(18, 18, 18, 0.1);
+  background-color: #fff;
+  position: fixed;
+  padding: 20px;
+  right: 0;
+  /* margin-top: 10vh; */
+  width: 22%;
+  margin-right: 40px;
+}
+.form-style {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  column-gap: 50px;
+  row-gap: 10px;
+  padding: 10px 50px;
+}
+.form-heading {
+  margin: 10px 0;
+}
+.form-wrapper {
+}
+.form-style input {
+  width: 50%;
+}
+.input-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid rgb(231, 231, 231);
+  border-top: 2px solid rgb(231, 231, 231);
+  padding: 10px 0px 10px 10px;
+
+  border-radius: 5px;
+}
+.input-div button {
+  margin-left: 10px;
+}
+
+.input-label {
+  font-size: large;
+  display: inline-block;
+  width: 30%;
+}
+.input-class {
+  border: 2px solid gray;
+
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: large;
+}
+
+.input-div-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  cursor: move;
+}
+.input-div-2 label,
+p {
+  display: block;
+  width: 40%;
+}
+.input-div-2 select {
+  width: 35%;
+}
+.table-section {
+  /* border: 2px solid; */
+  box-shadow: 0px 10px 15px rgba(18, 18, 18, 0.2);
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 10px;
+  width: 80%;
+  border-radius: 5px;
+}
+.view-form-div {
+  box-shadow: 0px 10px 15px rgba(18, 18, 18, 0.1);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.floating-div {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+.floating-div-2 {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+}
