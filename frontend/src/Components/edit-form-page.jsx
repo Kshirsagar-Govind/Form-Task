@@ -92,6 +92,12 @@ export default function EditFormPage() {
         `${process.env.REACT_APP_HOST}/update-form/${params.id}`,
         payload
       );
+      if (newForm.data.code == 200) {
+        alert("New Form Changes Saved Successfully");
+        navigate("/");
+      } else {
+        alert("SERVER ERROR");
+      }
       console.log(newForm);
     } catch (error) {
       console.log(error);

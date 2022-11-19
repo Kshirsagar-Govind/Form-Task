@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const inputs_arr = {
-    input_id: { type: String, default: "" },
+    id: { type: String, default: "" },
     input_index: { type: Number, default: 0 },
     input_type: { type: String, default: "" },
     input_title: { type: String, default: "" },
