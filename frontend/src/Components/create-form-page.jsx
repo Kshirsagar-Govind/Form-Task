@@ -164,7 +164,8 @@ export default function NewFormPage() {
                     </label>
                     <input
                       className="input-class"
-                      disabled="true"
+                      // disabled="true"
+                      readOnly="true"
                       placeholder={item.input_paceholder}
                       type={item.input_type}
                     />

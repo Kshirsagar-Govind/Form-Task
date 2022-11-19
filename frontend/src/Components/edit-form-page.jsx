@@ -168,7 +168,7 @@ export default function EditFormPage() {
                   </label>
                   <input
                     className="input-class"
-                    disabled="true"
+                    readOnly="true"
                     placeholder={item.input_paceholder}
                     type={item.input_type}
                   />
