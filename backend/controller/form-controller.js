@@ -21,9 +21,8 @@ exports.CREATE_NEW_FORM = async (req, res) => {
 
 exports.FETCH_ALL_FORMS = async (req, res) => {
     try {
-        console.log('UPDATING ALL FORMS --------------------------------');
+        console.log('FETCHING ALL FORMS --------------------------------');
 
-        console.log('SENDING THE FORMS DATA');
         const data = await FormModel.find({})
             .then(data => { console.log(data); res.json({ code: 200, data }) })
             .catch(err => res.json({ code: 400, msg: err }));
